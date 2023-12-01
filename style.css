@@ -1,0 +1,77 @@
+.body{
+    font-family:'Times New Roman', Times, serif
+}
+
+.body{
+
+}
+
+#navigation-bar{
+    display: flex;
+    justify-content: space-between;
+    background-color: beige;
+    border-bottom: 1px solid black;
+}
+
+#logo {
+    margin-top: 0;
+}
+
+/* .navigation {
+    display: flex;
+    width: 400px;
+    align-items: flex-end;
+} */
+
+.navigation a{
+    text-decoration: none;
+}
+
+/* INPUT SECTION */
+
+.input-luas-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 26px;    
+}
+
+label {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.katik-input{
+    outline: none;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
+} 
+
+.katik-input:focus{
+    border: 1px solid red;
+}
+
+.btn{
+    display: flex;
+    align-self: center;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.btn button{
+    background-color: rgb(255, 105, 105);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+button:active {
+    background-color: rgba(255, 0, 0, 0.693);
+    transform: translateY(2px);
+}
