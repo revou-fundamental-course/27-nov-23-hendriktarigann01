@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project (Luas)</title>
+    <link rel="stylesheet" href="/LuasSegitiga/style.css">
+    <script src="/LuasSegitiga/script.js"></script>
+    
+</head>
+<body>
+    <header id="navigation-bar">
+        <h1 id="logo">Katik</h1>
+        <nav class="navigation">
+            <div class="luas">
+            <a href="/LuasSegitiga/index.html">Luas Segitiga</a>
+            </div>
+            <div class="keliling">
+            <a href="/KelilingSegitiga/index.html">Keliling Segitiga</a>
+            </div>
+        </nav>
+    </header>
+
+    <body id="rumus-segitigaluas">
+        <img src="/LuasSegitiga/assets/segitigaluas.png" alt="Segitiga">
+            <div class="teksrumus">
+                <h2>Rumus Luas Segitiga yaitu : </h2>
+            </div>
+            <div class="rumus">
+                <p>L = 1/2 x a x t
+                    <ul>Dimana :
+                        <br>
+                        <li>L = Luas</li>
+                        <li>a = Panjang Alas</li>
+                        <li>t = Tinggi</li>
+                    </ul>
+                </p>
+            </div>
+    </body>
+
+<section class="input-luas-section">
+    <!-- Input Alas -->
+    <label for="input-alas" id="label-alas">Alas</label>
+    <input type="number" id="input-alas" class="katik-input">
+    <!-- Input Tinggi -->
+    <label for="input-tinggi" id="label-tinggi">Tinggi</label>
+    <input type="number" id="input-tinggi" class="katik-input">
+</section>
+
+    <!-- Tombol Button -->
+    <div class="btn">
+        <button onclick="hitungLuas()">Hitung</button>
+        <button onclick="resetHasil()">Reset</button>
+    </div>
+    <!-- Hasil perhitungan -->
+    <div class="hasil">
+        <p id="hasilLuas"></p>
+    </div>
+    
+</body>
+</html>
