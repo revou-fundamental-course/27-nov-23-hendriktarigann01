@@ -4,24 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project (Luas)</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     
 </head>
 <body>
     <header id="navigation-bar">
         <h1 id="logo">Katik</h1>
-        <nav class="navigation">
-            <div class="luas">
-            <a href="/index.html">Luas Segitiga</a>
-            </div>
-            <div class="keliling">
-            <a href="/indexkelilings.html">Keliling Segitiga</a>
-            </div>
-        </nav>
     </header>
 
 <!------------------------ Luas Segitiga ------------------------>
+<div class="container">
     <body id="rumus-segitiga">
         <img src="/assets/segitiga.png" alt="Segitiga">
             <div class="teksrumus">
@@ -42,19 +35,19 @@
 <section class="input-luas-section">
     <!-- Input Alas -->
     <label for="input-alas" id="label-alas" placeholder="Nilai Alas">Alas</label>
-    <input type="number" id="input-alas" class="katik-input">
+    <input type="number" id="input-alas" class="katik-input-luas">
     <!-- Input Tinggi -->
     <label for="input-tinggi" id="label-tinggi">Tinggi</label>
-    <input type="number" id="input-tinggi" class="katik-input">
+    <input type="number" id="input-tinggi" class="katik-input-luas">
 </section>
 
     <!-- Tombol Button -->
-    <div class="btn">
+    <div class="btn-luas">
         <button onclick="hitungLuas()">Hitung</button>
         <button onclick="resetHasil2()">Reset</button>
     </div>
     <!-- Hasil perhitungan -->
-    <div class="hasil">
+    <div class="hasil-luas">
         <p id="hasilLuas"></p>
     </div>
 <!------------------------ Keliling Segitiga ------------------------>
@@ -75,29 +68,30 @@
                 </ul>
             </p>
         </div>
-</body>
+
 
 <section class="input-keliling-section">
     <!-- Input SisiA -->
     <label for="input-sisiA" id="label-sisiA">Sisi A</label>
-    <input type="number" id="input-sisiA" class="katik-input">
+    <input type="number" id="input-sisiA" class="katik-input-keliling">
     <!-- Input Sisi B -->
     <label for="input-sisiB" id="label-sisiB">Sisi B</label>
-    <input type="number" id="input-sisiB" class="katik-input">
+    <input type="number" id="input-sisiB" class="katik-input-keliling">
     <!-- Input Sisi C -->
     <label for="input-sisiC" id="label-sisiC">Sisi C</label>
-    <input type="number" id="input-sisiC" class="katik-input">
+    <input type="number" id="input-sisiC" class="katik-input-keliling">
 </section>
 
     <!-- Tombol Button -->
-    <div class="btn">
+    <div class="btn-keliling">
         <button onclick="hitungKeliling()">Hitung</button>
         <button onclick="resetHasil()">Reset</button>
     </div>
     <!-- Hasil perhitungan -->
-    <div class="hasil">
+    <div class="hasilkeliling">
         <p id="hasilKeliling"></p>
     </div>
 
 </body>
+</div>
 </html>
